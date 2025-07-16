@@ -1,0 +1,71 @@
+/* Global styles */
+body {
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #222;
+}
+
+.word-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Quicksand', sans-serif;
+}
+
+
+/*dog animation*/
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.word-image {
+  animation: bounceIn 0.6s ease;
+}
+
+@keyframes wag {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.word-image:hover {
+  animation: wag 0.6s ease-in-out infinite;
+}
+
+/* === THEME: DAY === */
+body.day {
+  background-color: #fefefe;
+  color: #222;
+}
+
+/* === THEME: NIGHT === */
+body.night {
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+}
+
+.word-card.night{
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+}
+
+/* Optional: Soft transition */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "simis-world",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "animate.css": "^4.1.1",
+    "pinia": "^3.0.3",
+    "vite": "^5.4.19",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "vite-plugin-vue-devtools": "^7.7.7"
+  }
+}
